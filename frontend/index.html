@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f6f2" />
+    <meta
+      name="description"
+      content="Meet your new favorite café ritual. Explore a thoughtful menu and find your perfect cup."
+    />
+    <title>Sunday Supply — Your neighborhood coffee ritual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      <span class="announcement-dot"></span>
+      <span>Good things brewing in the neighborhood</span>
+      <span class="announcement-divider">·</span>
+      <span>Open today until 6 pm</span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Sunday Supply home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44" fill="none">
+            <path d="M11 15.5h19v11a8 8 0 0 1-8 8h-3a8 8 0 0 1-8-8v-11Z" fill="currentColor" />
+            <path d="M30 19h2.5a4.5 4.5 0 0 1 0 9H30" stroke="currentColor" stroke-width="2.5" />
+            <path d="M17 11c-2-2 2-3 0-5m7 5c-2-2 2-3 0-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="brand-name">sunday<span>supply</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#menu">The menu</a>
+        <a href="#story">Our little story</a>
+        <a href="#visit">Find us</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button search-toggle" type="button" aria-label="Search the menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4 4"></path></svg>
+        </button>
+        <button class="bag-button" id="open-cart" type="button" aria-label="Open your bag, 0 items">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+          <span class="bag-label">Your bag</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="mobile-menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> YOUR NEW DAILY RITUAL</div>
+          <h1 id="hero-title">A little pause.<br />A <em>lot</em> of good.</h1>
+          <p>Thoughtfully sourced coffee, feel-good food, and a sunny spot with your name on it.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#menu">Find your favorite <span aria-hidden="true">↗</span></a>
+            <div class="hero-rating" aria-label="Rated 4.9 out of 5">
+              <span class="rating-stars">★★★★★</span>
+              <span><strong>4.9</strong> from our neighbors</span>
+            </div>
+          </div>
+          <div class="hero-footnote">
+            <span class="tiny-sun" aria-hidden="true">✳</span>
+            <span>Made slowly. Served gladly.</span>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1400&q=85"
+            alt="A freshly brewed cup of coffee on a sunlit café table"
+          />
+          <div class="hero-image-overlay"></div>
+          <div class="hero-note"><span class="note-sparkle">✳</span><span>your corner<br />of calm</span></div>
+          <div class="hero-photo-caption"><span class="caption-dot"></span> 18 OAK STREET · EST. 2019</div>
+        </div>
+        <div class="hero-side-note">GOOD MORNINGS LIVE HERE <span>—</span></div>
+      </section>
+
+      <section class="marquee-band" aria-label="What we care about">
+        <div class="marquee-content">
+          <span>GOOD COFFEE, NO SHORTCUTS</span><i>✳</i><span>LOCALLY LOVED</span><i>✳</i><span>MADE WITH A LITTLE MORE HEART</span><i>✳</i><span>GOOD COFFEE, NO SHORTCUTS</span><i>✳</i><span>LOCALLY LOVED</span><i>✳</i><span>MADE WITH A LITTLE MORE HEART</span><i>✳</i>
+        </div>
+      </section>
+
+      <section class="menu-section section-shell" id="menu">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> THE GOOD STUFF</div>
+            <h2>A menu for <em>your kind</em> of day.</h2>
+          </div>
+          <p>Little luxuries, everyday favorites, and a few happy surprises. Everything made fresh, just for you.</p>
+        </div>
+
+        <section class="companion-card" aria-labelledby="companion-title">
+          <div class="companion-art" aria-hidden="true">
+            <div class="art-sun"></div>
+            <div class="art-cup"><span></span></div>
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <span class="art-sparkle sparkle-one">✳</span>
+            <span class="art-sparkle sparkle-two">✳</span>
+          </div>
+          <div class="companion-copy">
+            <div class="companion-label"><span class="companion-pulse"></span> YOUR LITTLE CAFÉ COMPANION</div>
+            <h3 id="companion-title">Tell us your mood.<br /><em>We’ll find your sip.</em></h3>
+            <p>Need a little pick-me-up? Tell us what you’re in the mood for and we’ll find something lovely.</p>
+            <div class="suggestion-chips">
+              <button class="suggestion-chip" type="button" data-prompt="Something iced and not too sweet">Iced & not too sweet <span>↗</span></button>
+              <button class="suggestion-chip" type="button" data-prompt="I need a cozy caffeine-free treat">Cozy, no caffeine <span>↗</span></button>
+              <button class="suggestion-chip" type="button" data-prompt="A little treat under $6">A treat under $6 <span>↗</span></button>
+            </div>
+            <form class="companion-input" id="companion-form">
+              <label class="visually-hidden" for="companion-prompt">Tell us what you’re in the mood for</label>
+              <input id="companion-prompt" name="prompt" type="text" placeholder="I’m in the mood for…" autocomplete="off" />
+              <button type="submit" aria-label="Get recommendations">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg>
+              </button>
+            </form>
+            <p class="companion-response" id="companion-response" aria-live="polite"></p>
+          </div>
+          <div class="companion-stamp"><span>MADE FOR</span><strong>YOU</strong><i>✳</i></div>
+        </section>
+
+        <div class="menu-toolbar">
+          <div class="category-list" role="group" aria-label="Filter menu category">
+            <button class="category-button active" type="button" data-category="All">All the good stuff <span class="category-count">08</span></button>
+            <button class="category-button" type="button" data-category="Coffee">Coffee</button>
+            <button class="category-button" type="button" data-category="Tea">Tea & more</button>
+            <button class="category-button" type="button" data-category="Food">Little bites</button>
+          </div>
+          <label class="menu-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4 4"></path></svg>
+            <span class="visually-hidden">Search menu</span>
+            <input id="menu-search" type="search" placeholder="Find a favorite…" />
+          </label>
+        </div>
+
+        <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+        <div class="empty-menu hidden" id="empty-menu">Nothing on the menu matches just yet. Try another search. <button type="button" id="clear-search">Show everything</button></div>
+
+        <div class="menu-footer">
+          <span><i>✳</i> Everything is made fresh, just for you.</span>
+          <span>Have an allergy? Please have a chat with our team before ordering.</span>
+        </div>
+      </section>
+
+      <section class="story-section" id="story">
+        <div class="story-image">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1100&q=85" alt="A cozy neighborhood café with warm morning light" loading="lazy" />
+          <div class="story-image-tag"><span>✳</span> A GOOD PLACE TO LAND</div>
+        </div>
+        <div class="story-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT US</div>
+          <h2>Not just a coffee.<br />A <em>feeling.</em></h2>
+          <p>We started Sunday Supply with one simple idea: the everyday deserves a little extra. A really good cup, a familiar face, a moment that feels like yours.</p>
+          <p>So we source with care, make things by hand, and always leave the sunny seat open.</p>
+          <a class="text-link" href="#visit">Come say hello <span>↗</span></a>
+          <div class="story-signature">See you soon, <span>the Sunday team</span></div>
+        </div>
+        <div class="story-doodle" aria-hidden="true">✳</div>
+      </section>
+
+      <section class="visit-section section-shell" id="visit">
+        <div class="visit-heading">
+          <div class="eyebrow"><span class="eyebrow-line"></span> YOUR TABLE’S WAITING</div>
+          <h2>Come on <em>over.</em></h2>
+        </div>
+        <div class="visit-details">
+          <div><span class="detail-icon">↗</span><p><strong>Find our little corner</strong><br />18 Oak Street, Portland, OR</p></div>
+          <div><span class="detail-icon">◷</span><p><strong>We’re here for you</strong><br />Every day, 7 am – 6 pm</p></div>
+          <a class="button button-outline" href="https://maps.google.com/?q=18+Oak+Street+Portland+OR" target="_blank" rel="noreferrer">Get directions <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#" aria-label="Sunday Supply home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><path d="M11 15.5h19v11a8 8 0 0 1-8 8h-3a8 8 0 0 1-8-8v-11Z" fill="currentColor" /><path d="M30 19h2.5a4.5 4.5 0 0 1 0 9H30" stroke="currentColor" stroke-width="2.5" /><path d="M17 11c-2-2 2-3 0-5m7 5c-2-2 2-3 0-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></span>
+        <span class="brand-name">sunday<span>supply</span></span>
+      </a>
+      <p>A little pause. A lot of good.</p>
+      <span class="footer-copy">© 2026 Sunday Supply · Made with a little more heart.</span>
+    </footer>
+
+    <div class="cart-backdrop" id="cart-backdrop"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Your bag" aria-hidden="true">
+      <div class="drawer-header">
+        <div><span class="eyebrow"><span class="eyebrow-line"></span> YOUR LITTLE LINEUP</span><h2>Your bag<span class="drawer-item-count" id="drawer-item-count"></span></h2></div>
+        <button class="close-button" type="button" id="close-cart" aria-label="Close bag">×</button>
+      </div>
+      <div class="cart-body" id="cart-body"></div>
+      <div class="cart-checkout hidden" id="cart-checkout">
+        <div class="estimate-note"><span>◷</span><span><strong id="wait-estimate">About 8–12 min</strong><small>Estimated wait · we’ll keep you posted</small></span></div>
+        <div class="subtotal-row"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div>
+        <p class="tax-note">Taxes calculated at the counter. Pay when you pick up.</p>
+        <button class="button button-dark checkout-button" id="place-order" type="button">Place my order <span>↗</span></button>
+      </div>
+    </aside>
+
+    <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+      <section class="dialog" id="item-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+        <button class="close-button dialog-close" type="button" aria-label="Close item details">×</button>
+        <div id="dialog-content"></div>
+      </section>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
